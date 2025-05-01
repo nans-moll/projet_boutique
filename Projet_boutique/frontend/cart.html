@@ -1,0 +1,205 @@
+// cart.html - Page du panier
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - ModaStyle</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/api.js" defer></script>
+    <script src="assets/js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ModaStyle</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Catalogue</a></li>
+                    <li><a href="wishlist.html">Liste de souhaits</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html" class="active">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <div class="container">
+                <h1>Votre Panier</h1>
+                
+                <div class="cart-container">
+                    <div class="cart-products">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>Produit</th>
+                                    <th>Nom</th>
+                                    <th>Variante</th>
+                                    <th>Prix unitaire</th>
+                                    <th>Quantité</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items">
+                                <!-- Les articles du panier seront ajoutés ici dynamiquement -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <h2>Récapitulatif de commande</h2>
+                        <div class="summary-item">
+                            <span>Sous-total</span>
+                            <span id="subtotal">0.00 €</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>TVA (20%)</span>
+                            <span id="tax">0.00 €</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span id="total">0.00 €</span>
+                        </div>
+                        
+                        <div class="shipping-address">
+                            <h3>Adresse de livraison</h3>
+                            <div id="shipping-address-display" class="address-display"></div>
+                            <button id="change-address-btn" class="btn btn-text">Modifier l'adresse</button>
+                            
+                            <form id="address-form" class="address-form">
+                                <div class="form-group">
+                                    <label for="fullName">Nom complet</label>
+                                    <input type="text" id="fullName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="street">Adresse</label>
+                                    <input type="text" id="street" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="postalCode">Code postal</label>
+                                    <input type="text" id="postalCode" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">Ville</label>
+                                    <input type="text" id="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Pays</label>
+                                    <input type="text" id="country" required>
+                                </div>
+                                <button type="submit" class="btn btn-secondary">Sauvegarder l'adresse</button>
+                            </form>
+                        </div>
+                        
+                        <button id="checkout-btn" class="btn btn-primary btn-checkout">Passer la commande</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">ModaStyle</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2025 ModaStyle - Projet Challenge JS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+// wishlist.html - Page de la liste de souhaits
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de souhaits - ModaStyle</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/api.js" defer></script>
+    <script src="assets/js/wishlist.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ModaStyle</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Catalogue</a></li>
+                    <li><a href="wishlist.html" class="active">Liste de souhaits</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="wishlist">
+            <div class="container">
+                <div class="wishlist-header">
+                    <h1>Votre Liste de Souhaits</h1>
+                    <div class="wishlist-sort">
+                        <label for="sort-wishlist">Trier par</label>
+                        <select id="sort-wishlist">
+                            <option value="priority">Priorité</option>
+                            <option value="price-asc">Prix croissant</option>
+                            <option value="price-desc">Prix décroissant</option>
+                            <option value="name">Nom</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="wishlist-items" id="wishlist-items">
+                    <!-- Les articles de la liste de souhaits seront ajoutés ici dynamiquement -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">ModaStyle</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2025 ModaStyle - Projet Challenge JS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

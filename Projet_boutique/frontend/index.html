@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModaStyle - Boutique de vêtements</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/api.js" defer></script>
+    <script src="assets/js/catalog.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ModaStyle</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Catalogue</a></li>
+                    <li><a href="wishlist.html">Liste de souhaits</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-filters">
+            <div class="container">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Rechercher un produit...">
+                </div>
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="filter-gender">Genre</label>
+                        <select id="filter-gender">
+                            <option value="">Tous</option>
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-type">Type</label>
+                        <select id="filter-type">
+                            <option value="">Tous</option>
+                            <option value="pantalon">Pantalon</option>
+                            <option value="chemise">Chemise</option>
+                            <option value="robe">Robe</option>
+                            <option value="t-shirt">T-shirt</option>
+                            <option value="veste">Veste</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-color">Couleur</label>
+                        <select id="filter-color">
+                            <option value="">Toutes</option>
+                            <option value="noir">Noir</option>
+                            <option value="blanc">Blanc</option>
+                            <option value="bleu">Bleu</option>
+                            <option value="rouge">Rouge</option>
+                            <option value="vert">Vert</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sort">
+                    <label for="sort-select">Trier par</label>
+                    <select id="sort-select">
+                        <option value="default">Par défaut</option>
+                        <option value="price-asc">Prix croissant</option>
+                        <option value="price-desc">Prix décroissant</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="products-grid" id="products-container">
+                    <!-- Les produits seront ajoutés ici dynamiquement -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">ModaStyle</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2025 ModaStyle - Projet Challenge JS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <template id="product-card-template">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="" alt="" class="product-img primary">
+                <img src="" alt="" class="product-img secondary">
+                <div class="product-tag discount">-<span class="discount-value"></span>%</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name"></h3>
+                <div class="product-price">
+                    <span class="current-price"></span>
+                    <span class="original-price"></span>
+                    <span class="currency"></span>
+                </div>
+                <div class="product-actions">
+                    <button class="btn btn-view">Voir</button>
+                    <button class="btn btn-wishlist">❤</button>
+                    <button class="btn btn-add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+</html>

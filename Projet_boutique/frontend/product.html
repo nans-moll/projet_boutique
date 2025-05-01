@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du produit - ModaStyle</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/api.js" defer></script>
+    <script src="assets/js/product.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Même header que index.html -->
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ModaStyle</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Catalogue</a></li>
+                    <li><a href="wishlist.html">Liste de souhaits</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="container">
+                <div class="product-detail-grid">
+                    <div class="product-gallery">
+                        <div class="product-main-image">
+                            <img src="" alt="" id="main-product-image">
+                        </div>
+                        <div class="product-thumbnails" id="product-thumbnails">
+                            <!-- Les miniatures seront ajoutées ici dynamiquement -->
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-prev">❮</button>
+                            <button class="carousel-next">❯</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1 id="product-name"></h1>
+                        <div class="product-price">
+                            <span id="current-price"></span>
+                            <span id="original-price"></span>
+                            <span id="currency"></span>
+                            <span id="discount-badge" class="discount-badge">-<span id="discount-value"></span>%</span>
+                        </div>
+                        <div class="product-options">
+                            <div class="product-colors">
+                                <h3>Couleurs disponibles</h3>
+                                <div id="color-options" class="color-options">
+                                    <!-- Les options de couleur seront ajoutées ici dynamiquement -->
+                                </div>
+                            </div>
+                            <div class="product-sizes">
+                                <h3>Tailles disponibles</h3>
+                                <div id="size-options" class="size-options">
+                                    <!-- Les options de taille seront ajoutées ici dynamiquement -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-quantity">
+                            <h3>Quantité</h3>
+                            <div class="quantity-selector">
+                                <button id="decrease-quantity">-</button>
+                                <input type="number" id="quantity" value="1" min="1">
+                                <button id="increase-quantity">+</button>
+                            </div>
+                            <p id="stock-info">En stock: <span id="stock-quantity"></span></p>
+                        </div>
+                        <div class="product-actions">
+                            <button id="add-to-cart" class="btn btn-primary">Ajouter au panier</button>
+                            <button id="add-to-wishlist" class="btn btn-secondary">Ajouter à ma liste de souhaits</button>
+                        </div>
+                        <div class="product-description">
+                            <h3>Description</h3>
+                            <p id="short-description"></p>
+                            <button id="show-more" class="btn btn-text">Voir plus</button>
+                            <div id="full-description" class="hidden"></div>
+                        </div>
+                        <div class="product-characteristics">
+                            <h3>Caractéristiques</h3>
+                            <ul id="characteristics-list">
+                                <!-- Les caractéristiques seront ajoutées ici dynamiquement -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="similar-products">
+            <div class="container">
+                <h2>Produits similaires</h2>
+                <div class="products-grid" id="similar-products-container">
+                    <!-- Les produits similaires seront ajoutés ici dynamiquement -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Même footer que index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">ModaStyle</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2025 ModaStyle - Projet Challenge JS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
