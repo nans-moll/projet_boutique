@@ -1,7 +1,7 @@
 # FashionHub - Site E-commerce de Vêtements
 
 ## Description du projet
-ModaStyle est un site e-commerce de vêtements développé dans le cadre du Challenge JS. Cette application web permet aux utilisateurs de parcourir un catalogue de produits, de filtrer et trier les articles, d'ajouter des produits au panier et à une liste de souhaits, et de simuler un processus de commande.
+FashionHub est un site e-commerce de vêtements développé dans le cadre du Challenge JS. Cette application web permet aux utilisateurs de parcourir un catalogue de produits, de filtrer et trier les articles, d'ajouter des produits au panier et à une liste de souhaits, et de simuler un processus de commande.
 
 ## Fonctionnalités
 - Catalogue de 20 produits uniques avec descriptions détaillées
