@@ -114,7 +114,7 @@ Ce projet répond aux exigences suivantes du Challenge JS :
 - Respect des contraintes techniques (HTML/CSS/JS et Express)
 
 ## Auteurs
-MOLL Nans, Etienne Bebiere
+ Nans, Etienne, ilan
 
 ## Licence
 Ce projet est réalisé dans le cadre d'un projet scolaire.
