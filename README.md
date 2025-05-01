@@ -120,4 +120,4 @@ MOLL Nans, Etienne Bebiere
 Ce projet est réalisé dans le cadre d'un projet scolaire.
 
 ---
-*Projet réalisé pour le module Challenge JS - Bachelor 1 Informatique - Ynov*RéessayerClaude peut faire des erreurs. Assurez-vous de vérifier ses réponses. 3.7 Sonnet
+*Projet réalisé pour le module Challenge JS - Bachelor 1 Informatique - Ynov
