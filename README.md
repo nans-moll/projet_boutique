@@ -1,4 +1,4 @@
-# ModaStyle - Site E-commerce de Vêtements
+# FashionHub - Site E-commerce de Vêtements
 
 ## Description du projet
 ModaStyle est un site e-commerce de vêtements développé dans le cadre du Challenge JS. Cette application web permet aux utilisateurs de parcourir un catalogue de produits, de filtrer et trier les articles, d'ajouter des produits au panier et à une liste de souhaits, et de simuler un processus de commande.
@@ -62,7 +62,7 @@ boutique-vetements/
 
 ## Installation
 1. Cloner le dépôt
-git clone [URL_DU_DEPOT]
+git clone (utilisez l'url du repo)
 cd boutique-vetements
 
 2. Installer les dépendances
@@ -114,7 +114,7 @@ Ce projet répond aux exigences suivantes du Challenge JS :
 - Respect des contraintes techniques (HTML/CSS/JS et Express)
 
 ## Auteurs
-[Votre nom et celui de votre coéquipier]
+MOLL Nans, Etienne Bebiere
 
 ## Licence
 Ce projet est réalisé dans le cadre d'un projet scolaire.
